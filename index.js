@@ -19,7 +19,6 @@ const cookie = args.cookie;
     try {
         const data = await ScrapperService.getPageInfo(search, minpage, maxpage, cookie);
         Utils.saveFileLocally(save, JSON.stringify(data));
-        console.log(`See: ${save}`)
     }catch(err) {
         console.log("Ocorreu um erro. Verifique seus parâmetros ou tente modificar os cookies")
     }
