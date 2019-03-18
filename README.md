@@ -1,4 +1,4 @@
-## BuscaPrecoScrapper
+## BuscaPrecoScrapper - BuscaPreco Search Scrapper
 
 ### Arguments
 - minpage: first page
