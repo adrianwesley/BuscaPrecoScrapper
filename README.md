@@ -7,7 +7,7 @@
 | maxpage  |  int | 10 | No | Last Page for Scrap  |
 | search  | string  | null | Yes | Word to Search  |
 | cookie  | string  | F9FC3C3CE... | Yes | Cookie |
-| save  | string  | null  | No | file path to save json structure (e.q /homedir/scrap.json) |
+| save  | string  | homedir/busca-preco.json  | No | file path to save json structure (e.q /homedir/scrap.json) |
 
 ## Installation
 - Install package globally
