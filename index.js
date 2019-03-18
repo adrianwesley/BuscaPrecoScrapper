@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const ScrapperService = require("./src/services/itemScrapper");
 const Utils = require("./src/services/utils");
 
