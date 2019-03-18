@@ -1,4 +1,3 @@
-const server = require("./server");
 const ScrapperService = require("./src/services/itemScrapper");
 const Utils = require("./src/services/utils");
 
@@ -26,5 +25,3 @@ const cookie = args.cookie;
         console.log("Ocorreu um erro. Verifique seus parâmetros ou tente modificar os cookies")
     }
 })();
-
-//server.listen(4000);
