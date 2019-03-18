@@ -9,7 +9,7 @@
 | cookie  | string  | F9FC3C3CE... | Yes | Cookie |
 | save  | string  | null  | Yes | file path to save json structure (e.q /homedir/scrap.json) |
 
-### Installation
+## Installation
 - Clone or download the project
 - In root folder, enter
 ```javascript
@@ -20,6 +20,6 @@
   node index.js minpage=<minpage> maxpage=<maxpage> search=<search> save=<save> cookie=<cookie>
 ```
 
-### Tested Environment
+## Tested Environment
 - Node v10.15.2
 - npm v6.4.1
