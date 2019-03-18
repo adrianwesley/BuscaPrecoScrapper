@@ -1,6 +1,6 @@
 ## BuscaPrecoScrapper - BuscaPreco Search Scrapper
 
-### Arguments
+## Arguments
 | Arguments  | Type  | Default  | Required | Description
 | :------------: | :------------: | :------------: | :------------: | :------------: |
 | minpage  | int  | 1 | No | First Page for Scrap  |
