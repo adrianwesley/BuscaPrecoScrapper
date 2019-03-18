@@ -23,7 +23,7 @@ if(!Args.search || !Args.cookie) {
             Args.maxpage,
             Args.cookie
         );
-        Utils.saveFileLocally(save, JSON.stringify(data));
+        Utils.saveFileLocally(Args.save, JSON.stringify(data));
     }catch(err) {
         console.log("Ocorreu um erro. Verifique seus parâmetros ou tente modificar os cookies");
     }
