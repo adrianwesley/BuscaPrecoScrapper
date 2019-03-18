@@ -10,9 +10,8 @@ module.exports = {
     saveFileLocally(file, content) {
       try {
         fs.writeFileSync(path.normalize(file), content, 'utf8');
-        console.log('Success in writing file')
       } catch (err) {
-        console.log('Error in writing file')
+        console.log('Error in writing file');
         console.log(err)
       }
     }
