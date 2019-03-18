@@ -7,7 +7,7 @@
 | maxpage  |  int | 10 | No | Last Page for Scrap  |
 | search  | string  | null | Yes | Word to Search  |
 | cookie  | string  | F9FC3C3CE... | Yes | Cookie |
-| save  | string  | null  | Yes | file path to save json structure (e.q /homedir/scrap.json) |
+| save  | string  | null  | No | file path to save json structure (e.q /homedir/scrap.json) |
 
 ## Installation
 - Install package globally
@@ -16,7 +16,8 @@
 ```
 - Execute
 ```javascript
-  scrap-buscapreco minpage=<minpage> maxpage=<maxpage> search=<search> save=<save> cookie=<cookie>
+  scrap-buscapreco --minpage=<minpage> --maxpage=<maxpage> --search=<search> --save=<save> --cookie=<cookie>
+  scrap-buscapreco -i <minpage> -a <maxpage> -f <search> -s <save> -c <cookie>
 ```
 
 ## Tested Environment
