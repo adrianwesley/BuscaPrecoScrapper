@@ -9,6 +9,7 @@
 
 ### Installation
 - Clone or download the project
+- In root folder, enter npm install
 - In root folder, execute: node index.js minpage=<*minpage*> maxpage=<*maxpage*> page=<*maxpage*> search=<*search*> save=<*save*>
 
 ### Tested Environment
