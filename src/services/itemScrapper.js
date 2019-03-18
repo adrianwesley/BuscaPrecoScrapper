@@ -1,5 +1,5 @@
 const rp = require('request-promise');
-const ScrapperConfig = require("../configs/scrapperConfig");
+const ScrapperConfig = require("../configs/ScrapperConfig");
 const cheerio = require('cheerio');
 const utils = require("./utils");
 
