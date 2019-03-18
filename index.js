@@ -2,26 +2,29 @@
 
 const ScrapperService = require("./src/services/itemScrapper");
 const Utils = require("./src/services/utils");
+const Args = require("./src/services/commandLineArgs");
 
-process.argv = process.argv.slice(2);
-let args = { search: null, minpage: 1, maxpage: 10, save: null, cookie: null };
-
-Object.keys(args).forEach(key => {
-    const value = process.argv.find(x => x.split("=")[0] === key);
-    if(value) args[key] = value.split("=")[1];
-});
-
-const minpage = Number(args.minpage);
-const maxpage = Number(args.maxpage);
-const search = String(args.search);
-const save = String(args.save);
-const cookie = args.cookie;
+if(!Args.search || !Args.cookie) {
+    console.log("Verifique seus parâmetros.");
+    if(!Args.search) {
+        console.log("O parâmetro search é obrigatório.");
+    }
+    if(!Args.cookie) {
+        console.log("O parâmetro cookie é obrigatório.");
+    }
+    return;
+}
 
 (async function () {
     try {
-        const data = await ScrapperService.getPageInfo(search, minpage, maxpage, cookie);
+        const data = await ScrapperService.getPageInfo(
+            Args.search,
+            Args.minpage,
+            Args.maxpage,
+            Args.cookie
+        );
         Utils.saveFileLocally(save, JSON.stringify(data));
     }catch(err) {
-        console.log("Ocorreu um erro. Verifique seus parâmetros ou tente modificar os cookies")
+        console.log("Ocorreu um erro. Verifique seus parâmetros ou tente modificar os cookies");
     }
 })();
