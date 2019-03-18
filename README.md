@@ -10,14 +10,13 @@
 | save  | string  | null  | Yes | file path to save json structure (e.q /homedir/scrap.json) |
 
 ## Installation
-- Clone or download the project
-- In root folder, enter
+- Install package globally
 ```javascript
-  npm install
+  npm install -g scrap-buscapreco
 ```
-- In root folder, execute
+- Execute
 ```javascript
-  node index.js minpage=<minpage> maxpage=<maxpage> search=<search> save=<save> cookie=<cookie>
+  scrap-buscapreco minpage=<minpage> maxpage=<maxpage> search=<search> save=<save> cookie=<cookie>
 ```
 
 ## Tested Environment
