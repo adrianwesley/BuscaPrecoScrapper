@@ -13,7 +13,10 @@
 ```javascript
   npm install
 ```
-- In root folder, execute: node index.js minpage=<*minpage*> maxpage=<*maxpage*> search=<*search*> save=<*save*> cookie=<*cookie*>
+- In root folder, execute
+```javascript
+  node index.js minpage=<*minpage*> maxpage=<*maxpage*> search=<*search*> save=<*save*> cookie=<*cookie*>
+```
 
 ### Tested Environment
 - Node v10.15.2
