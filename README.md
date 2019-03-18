@@ -1,11 +1,13 @@
 ## BuscaPrecoScrapper - BuscaPreco Search Scrapper
 
 ### Arguments
-- minpage: first page
-- maxpage: last page
-- search: word to search
-- cookie: change cookie
-- save: file path to save json structure
+| Arguments  | Type  | Default  | Required | Description
+| :------------: | :------------: | :------------: | :------------: | :------------: |
+| minpage  | int  | 1 | No | First Page for Scrap  |
+| maxpage  |  int | 10 | No | Last Page for Scrap  |
+| search  | string  | null | Yes | Word to Search  |
+| cookie  | string  | F9FC3C3CE... | Yes | Cookie |
+| save  | string  | null  | Yes | file path to save json structure (e.q /homedir/scrap.json) |
 
 ### Installation
 - Clone or download the project
